@@ -13,7 +13,7 @@ const AboutMe = () => {
     <section id="about" className="about-section">
        <button
   className="vibrate-3 animated-button" style={{ fontWeight: 1000, fontSize: '16px' }}
-  onClick={() => window.open('https://drive.google.com/file/d/1lkHyvdIbIStzfKdMjkpGG4GaOunADeXM/view?usp=sharing', '_blank')}
+  onClick={() => window.open('https://drive.google.com/file/d/1z2Xi6HJ71N_rpQbHYjADZal9DDb33E_P/view?usp=sharing', '_blank')}
 >
 <FiDownload style={{ marginRight: '9px'}} />
 RESUME
