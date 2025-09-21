@@ -220,6 +220,10 @@
   max-width: 500px;
   text-align: left;
 }
+.about-text a{
+  color:#ffb8dc;
+  margin-left: 25px;
+}
 
 .about-text h2 {
   margin-bottom: 10px;
@@ -241,7 +245,8 @@
   font-weight: 700;
   color: #ffb8dc;
   transition: color 0.3s ease; 
+  margin: 0px;
 }
-.about-text p ul li a:hover{
+.about-text p ul li a:hover, .about-text a:hover {
   color: #ff078b;
 }

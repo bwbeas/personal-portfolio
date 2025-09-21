@@ -1,6 +1,9 @@
 import React from 'react';
 import './AboutMe.css';
 import { FiDownload } from 'react-icons/fi';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+
 
 import profileImage from '../assets/pic2.jpg';
 
@@ -24,11 +27,20 @@ RESUME
         </div>
         <div className="about-text">
           <h2 className="text-flicker-out-glow">hi, i'm Beas Jana</h2>
-
+          <br></br>
+          <a href="https://github.com/bwbeas" target="_blank" rel="noopener noreferrer">
+    <FaGithub size={28} />
+  </a>
+  <a href="https://www.linkedin.com/in/beas-jana/" target="_blank" rel="noopener noreferrer">
+    <FaLinkedin size={28} />
+  </a>
+  <a href="mailto:bellbuuuwork6@gmail.com" target="_blank" rel="noopener noreferrer">
+    <MdEmail size={28} />
+  </a>
           <p>
             i'm an undergraduate student pursuing B.Tech. i love creating, solving problems, writing and speaking. 
             <ul>
-              <li>☘️i like Data Structures and Algorithms and am specialised in C++
+              <li>☘️i like Data Structures and Algorithms and am specialised in C++.
                 <a href="https://leetcode.com/u/bwbeas/" target="_blank" rel="noopener noreferrer" 
                 > 🪼 my LeetCode</a>
               </li>
