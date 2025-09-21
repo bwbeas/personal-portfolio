@@ -29,7 +29,7 @@ RESUME
             i'm an undergraduate student pursuing B.Tech. i love creating, solving problems, writing and speaking. 
             <ul>
               <li>☘️i like Data Structures and Algorithms and am specialised in C++
-                <a href="https://leetcode.com/u/bwbeas/" targer="_blank" rel="noopener noreferrer" 
+                <a href="https://leetcode.com/u/bwbeas/" target="_blank" rel="noopener noreferrer" 
                 > 🪼 my LeetCode</a>
               </li>
               <li>☘️i do web development in my free time. i prefer to go for frontend roles in ReactJs.</li>

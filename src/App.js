@@ -1,6 +1,7 @@
 import './App.css';
+import Navbar from './components/Navbar';
+import Experience from './components/Experience';
 import AboutMe from './components/AboutMe';
-import Navbar from './components/Navbar'; 
 import Fireflies from './components/Fireflies'; 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Navbar /> 
       <Fireflies />
       <AboutMe />
-      
+      <Experience />
     </div>
   );
 }
