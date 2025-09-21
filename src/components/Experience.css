@@ -75,3 +75,16 @@
   color: #9a9a9a;
   white-space: nowrap;
 }
+
+@media (max-width: 600px) {
+  .experience-content {
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 0 1rem; 
+  }
+
+  .experience-date {
+    margin-top: 0.5rem;
+    white-space: normal; 
+  }
+}

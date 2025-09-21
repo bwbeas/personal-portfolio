@@ -41,3 +41,17 @@
 .nav-links li a:hover, .navbar-left .brand:hover {
   color: #ff078b;
 }
+@media (max-width: 768px) {
+  .navbar-left .brand {
+    font-size: 1.2rem; 
+  }
+
+  .navbar-center {
+    font-size: 1rem; 
+  }
+
+  .nav-links {
+    gap: 15px; 
+  }
+}
+

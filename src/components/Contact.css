@@ -53,3 +53,16 @@
   color: #ffffff;
   transition: transform 0.2s, color 0.2s;
 }
+
+@media (max-width: 600px) {
+  .social-icons {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; 
+  }
+
+  .social-icons a {
+    justify-content: center; 
+  }
+}
+
