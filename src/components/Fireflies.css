@@ -1,0 +1,286 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.firefly {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 0.4vw;
+  height: 0.4vw;
+  margin: -0.2vw 0 0 9.8vw;
+  pointer-events: none;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 200s; /* fallback */
+}
+
+.firefly::before,
+.firefly::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform-origin: -10vw;
+}
+
+.firefly::before {
+  background: rgb(255, 255, 150);
+  opacity: 0.4;
+  animation-name: drift;
+  animation-duration: 8s; 
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly::after {
+  background: rgb(253, 249, 129);
+  opacity: 0;
+  box-shadow: 0 0 0vw 0vw yellow;
+  animation-name: drift, flash;
+  animation-duration: 8s, 6000ms;
+  animation-timing-function: ease, ease;
+  animation-iteration-count: infinite, infinite;
+  animation-direction: alternate, normal;
+  animation-delay: 0ms, 500ms;
+}
+
+@keyframes drift {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flash {
+  0%, 30%, 100% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw yellow;
+  }
+  5% {
+    opacity: 1;
+    box-shadow: 0 0 2vw 0.4vw yellow;
+  }
+}
+
+/* Move animations for 15 fireflies */
+
+@keyframes move1 {
+  0% { transform: translateX(0vw) translateY(0vh) scale(0.5); }
+  50% { transform: translateX(10vw) translateY(-5vh) scale(0.8); }
+  100% { transform: translateX(-5vw) translateY(10vh) scale(0.4); }
+}
+
+@keyframes move2 {
+  0% { transform: translateX(5vw) translateY(5vh) scale(0.3); }
+  50% { transform: translateX(-8vw) translateY(10vh) scale(0.7); }
+  100% { transform: translateX(6vw) translateY(-8vh) scale(0.5); }
+}
+
+@keyframes move3 {
+  0% { transform: translateX(-3vw) translateY(8vh) scale(0.4); }
+  50% { transform: translateX(7vw) translateY(-6vh) scale(0.6); }
+  100% { transform: translateX(-10vw) translateY(4vh) scale(0.3); }
+}
+
+@keyframes move4 {
+  0% { transform: translateX(2vw) translateY(-7vh) scale(0.6); }
+  50% { transform: translateX(-5vw) translateY(9vh) scale(0.8); }
+  100% { transform: translateX(4vw) translateY(-10vh) scale(0.5); }
+}
+
+@keyframes move5 {
+  0% { transform: translateX(-7vw) translateY(2vh) scale(0.4); }
+  50% { transform: translateX(8vw) translateY(-3vh) scale(0.6); }
+  100% { transform: translateX(-4vw) translateY(7vh) scale(0.7); }
+}
+
+@keyframes move6 {
+  0% { transform: translateX(4vw) translateY(6vh) scale(0.5); }
+  50% { transform: translateX(-10vw) translateY(-5vh) scale(0.8); }
+  100% { transform: translateX(5vw) translateY(10vh) scale(0.4); }
+}
+
+@keyframes move7 {
+  0% { transform: translateX(-2vw) translateY(-8vh) scale(0.3); }
+  50% { transform: translateX(9vw) translateY(6vh) scale(0.7); }
+  100% { transform: translateX(-6vw) translateY(-4vh) scale(0.5); }
+}
+
+@keyframes move8 {
+  0% { transform: translateX(6vw) translateY(3vh) scale(0.4); }
+  50% { transform: translateX(-9vw) translateY(-7vh) scale(0.6); }
+  100% { transform: translateX(8vw) translateY(5vh) scale(0.3); }
+}
+
+@keyframes move9 {
+  0% { transform: translateX(-8vw) translateY(-4vh) scale(0.6); }
+  50% { transform: translateX(5vw) translateY(7vh) scale(0.8); }
+  100% { transform: translateX(-7vw) translateY(-9vh) scale(0.5); }
+}
+
+@keyframes move10 {
+  0% { transform: translateX(3vw) translateY(-2vh) scale(0.4); }
+  50% { transform: translateX(-6vw) translateY(9vh) scale(0.7); }
+  100% { transform: translateX(4vw) translateY(-10vh) scale(0.3); }
+}
+
+@keyframes move11 {
+  0% { transform: translateX(-4vw) translateY(7vh) scale(0.5); }
+  50% { transform: translateX(7vw) translateY(-3vh) scale(0.6); }
+  100% { transform: translateX(-5vw) translateY(8vh) scale(0.8); }
+}
+
+@keyframes move12 {
+  0% { transform: translateX(9vw) translateY(-6vh) scale(0.3); }
+  50% { transform: translateX(-3vw) translateY(5vh) scale(0.5); }
+  100% { transform: translateX(6vw) translateY(-7vh) scale(0.7); }
+}
+
+@keyframes move13 {
+  0% { transform: translateX(-5vw) translateY(10vh) scale(0.4); }
+  50% { transform: translateX(8vw) translateY(-8vh) scale(0.6); }
+  100% { transform: translateX(-2vw) translateY(6vh) scale(0.3); }
+}
+
+@keyframes move14 {
+  0% { transform: translateX(7vw) translateY(-9vh) scale(0.7); }
+  50% { transform: translateX(-4vw) translateY(8vh) scale(0.5); }
+  100% { transform: translateX(9vw) translateY(-5vh) scale(0.6); }
+}
+
+@keyframes move15 {
+  0% { transform: translateX(-6vw) translateY(4vh) scale(0.5); }
+  50% { transform: translateX(10vw) translateY(-10vh) scale(0.7); }
+  100% { transform: translateX(-3vw) translateY(9vh) scale(0.4); }
+}
+
+/* Assign animations with varying durations */
+
+.firefly-1 {
+  animation-name: move1;
+  animation-duration: 40s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-2 {
+  animation-name: move2;
+  animation-duration: 50s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-3 {
+  animation-name: move3;
+  animation-duration: 45s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-4 {
+  animation-name: move4;
+  animation-duration: 48s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-5 {
+  animation-name: move5;
+  animation-duration: 52s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-6 {
+  animation-name: move6;
+  animation-duration: 42s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-7 {
+  animation-name: move7;
+  animation-duration: 47s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-8 {
+  animation-name: move8;
+  animation-duration: 55s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-9 {
+  animation-name: move9;
+  animation-duration: 44s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-10 {
+  animation-name: move10;
+  animation-duration: 49s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-11 {
+  animation-name: move11;
+  animation-duration: 53s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-12 {
+  animation-name: move12;
+  animation-duration: 46s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-13 {
+  animation-name: move13;
+  animation-duration: 50s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-14 {
+  animation-name: move14;
+  animation-duration: 54s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.firefly-15 {
+  animation-name: move15;
+  animation-duration: 43s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
