@@ -8,6 +8,8 @@ import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
 import Projects from './components/Projects'; 
 import Others from './components/Others';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,12 +24,14 @@ function App() {
                 <Fireflies />
                 <AboutMe />
                 <Experience />
+                <Contact />
               </>
             }
           />
           <Route path="/projects" element={<Projects />} />
           <Route path="/others" element={<Others />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

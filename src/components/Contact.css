@@ -1,0 +1,55 @@
+.contact-icons {
+  max-width: 500px;
+  padding-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;          
+}
+.text-pop-up-top {
+  color: #ffffff;
+  animation: text-pop-up-top-move 0.5s cubic-bezier(.25, .46, .45, .94) forwards;
+}
+
+@keyframes text-pop-up-top-move {
+  0% {
+    transform: translateY(0);
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(-50px);
+    text-shadow: 
+      0 1px 0 #fff7fb, 
+      0 2px 0 #b10057, 
+      0 3px 0 #b10057,
+      0 4px 0 #b10057, 
+      0 5px 0 #b10057, 
+      0 6px 0 #b10057,
+      0 7px 0 #b10057, 
+      0 8px 0 #b10057, 
+      0 9px 0 #b10057,
+      0 50px 30px rgba(177, 0, 87, 0.3);
+  }
+}
+.contact-icons a {
+  color: #ffb8dc;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; 
+  gap: 12px;    
+}
+
+.social-icons a {
+  font-size: 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  text-decoration: none;
+  font-weight: 700;
+}
+.social-icons a:hover {
+  color: #ffffff;
+  transition: transform 0.2s, color 0.2s;
+}
